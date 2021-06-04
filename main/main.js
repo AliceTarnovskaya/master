@@ -153,6 +153,41 @@ window.addEventListener('DOMContentLoaded', () => {
         ".contacts"
     ).scroll();
 
+    // модалка
 
+    const orderAMaster = document.querySelector('.header__top-btn');
+    const modalOrder = document.querySelector('.modal__order');
+    const modalOrderCloseBtn = document.querySelector('.modal__order-close');
+
+    function showModal(item) {
+        item.style.display = 'block';
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal(item) {
+        item.style.display = '';
+        document.body.style.overflow = '';
+    }
+
+    orderAMaster.addEventListener('click', () => {
+        showModal(modalOrder);
+    });
+
+    modalOrderCloseBtn.addEventListener('click', () => {
+        closeModal(modalOrder);
+    });
+
+    modalOrder.addEventListener('click', (e) => {
+        let target = e.target;
+        if (target === modalOrder) {
+            closeModal();
+        }
+    })
+
+    document.addEventListener('keydown', (e) => {
+        if (e.code === 'Escape') {
+            closeModal();
+        }
+    })
 
 })

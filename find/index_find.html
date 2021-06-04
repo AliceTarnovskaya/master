@@ -24,7 +24,7 @@
                 <div class="header__top-inner">
                     <div class="header__top-half">
                         <div class="header__top-logo">
-                            <a href="../main/index_main.html"><img src="img/find/logo.png" alt="logo"></a>
+                            <a href="../index.html"><img src="img/find/logo.png" alt="logo"></a>
                         </div>
                         <div class="header__top-nav">
                             <ul class="header__top-list">
@@ -39,12 +39,12 @@
                                     </a>
                                 </li>
                                 <li class="header__top-li">
-                                    <a class="header__top-link" href="../main/index_main.html">
+                                    <a class="header__top-link" href="../index.html">
                                        Виды услуг
                                     </a>
                                 </li>
                                 <li class="header__top-li">
-                                    <a class="header__top-link" href="../main/index_main.html">
+                                    <a class="header__top-link" href="../index.html">
                                         Контакты
                                     </a>
                                 </li>
@@ -178,7 +178,7 @@
                         </fieldset>
                     </div>
                 </div>
-                <input class="tasks__form-btn" type="submit">
+                <button class="tasks__form-btn">Опубликовать задание</button>
                 <div class="tasks__admit">
                     <input class="tasks__check" type="checkbox">
                     <label class="tasks__check-border" for=""></label>
@@ -210,6 +210,36 @@
             </div>
         </div>
     </footer>
+    <div class="modal">
+        <div class="modal__dialog">
+            <div class="modal__content">
+                <h2 class="modal__title">Спасибо за ваше задание!</h2>
+                <p class="modal__text">
+                    Подождите, пока кто-нибудь откликнется на ваше обьявление. Если никто не откликнется на ваше обьявление, можете подать его снова через 2 дня (если вы повысите бюджет, то на ваше обьявление откликнутся быстрее)
+                </p>
+                <button class="modal__btn">Все понятно!</button>
+            </div>
+        </div>
+    </div>
+    <div class="modal__order">
+        <div class="modal__order-dialog">
+            <div class="modal__order-content">
+                <form class="modal__order-form" action="#">
+                    <div class="modal__order-close">×</div>
+                    <h3 class="modal__order-title">Укажите данные для связи</h3>
+                    <input type="name" placeholder="Ваше имя *">
+                    <input type="tel" placeholder="Ваш номер телефона *">
+                    <input type="text" placeholder="Ваш адрес *">
+                    <input type="text" placeholder="Выберете мастера *">
+                    <p class="modal__order-do">Что нужно сделать</p>
+                    <textarea name="" id=""></textarea>
+                    <P class="modal__order-max">1000 максимум символов</P>
+                    <input class="modal__order-btn" type="submit" value="Отправить">
+                    <img class="modal__order-pic" src="../main/img/main/master.png" alt="master">
+                </form>
+            </div>
+        </div>
+    </div>
     <script src="find.js"></script>
 </body>
 
